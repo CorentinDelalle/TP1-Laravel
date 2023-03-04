@@ -110,4 +110,6 @@ class EtudiantController extends Controller
 
         return redirect(route('liste.index'));
     }
+
+
 }

@@ -1,0 +1,37 @@
+<?php
+
+return [
+    'add_student'   => 'Ajouter un étudiant',
+    'sign_up'   => 'Créer un compte',
+    'sign_in'     => 'Connexion',
+    'student_list'     => 'Student list',
+    'student_list_tab_name' => 'Name',
+    'student_list_tab_email' => 'Email',
+    'more_infos' => 'Plus d\'infos...',
+    'update' => 'Mettre à jour',
+    'delete' => 'Supprimer',
+    'name' => 'Nom',
+    'address' => 'Adresse',
+    'email' => 'E-mail',
+    'phone' => 'Téléphone',
+    'city' => 'Ville',
+    'student' => 'Étudiant',
+    'birthday' => 'Date de naissance',
+    'add_student' => 'Ajouter un étudiant',
+    'add_form' => 'Formulaire d\'ajout',
+    'add' => 'Ajouter',
+    'create_user_account' => 'Créer un compte utilisateur',
+    'update_student' => 'Modifier un étudiant',
+    'save' => 'Enregistrer',
+    'no_students' => 'No students',
+    'form' => 'Formulaire',
+    'password' => 'Mot de passe',
+    'add_user' => 'Ajouter utilisateur',
+    'article' => 'Mes articles',
+    'logout' => 'Déconnexion',
+    'dashboard' => 'Tableau de bord',
+    'reading_title' => 'Articles',
+    'add_post' => 'Ajouter un article',
+    
+
+];

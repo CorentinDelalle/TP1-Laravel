@@ -1,14 +1,8 @@
 @extends('layouts.app')
 @section('title', 'Etudiant')
 @section('content')
-<nav class="navbar navbar-inverse bg-dark mb-4">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand text-white" href="{{ route('liste.index')}}">Étudiants de Maisonneuve</a>
-    </div>
-    <a href="{{ route('liste.create')}}" class="btn btn-primary">Ajouter un étudiant</a>
-  </div>
-</nav> 
+
+@include('partials.nav')
 
 <div class="row">
       <div class="col-lg-4">
@@ -17,7 +11,7 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
               class="rounded-circle img-fluid" style="width: 150px;">
             <h5 class="my-3">{{ $etudiant->nom }}</h5>
-            <p class="text-muted mb-1">Étudiant</p>
+            <p class="text-muted mb-1">@lang('lang.student')</p>
           </div>
         </div>
 
@@ -27,7 +21,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Nom</p>
+                <p class="mb-0">@lang('lang.name')</p>
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">{{ $etudiant->nom }}</p>
@@ -36,7 +30,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Date de naissance</p>
+                <p class="mb-0">@lang('lang.birthday')</p>
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">{{ $etudiant->naissance }}</p>
@@ -45,7 +39,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Email</p>
+                <p class="mb-0">@lang('lang.email')</p>
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">{{ $etudiant->email }}</p>
@@ -54,7 +48,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Phone</p>
+                <p class="mb-0">@lang('lang.phone')</p>
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">{{ $etudiant->phone }}</p>
@@ -63,7 +57,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Adresse</p>
+                <p class="mb-0">@lang('lang.address')</p>
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">{{ $etudiant->adresse }}</p>
@@ -72,7 +66,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Ville</p>
+                <p class="mb-0">@lang('lang.city')</p>
               </div>
               <div class="col-sm-9">
                 <p class="text-muted mb-0">{{ $etudiant->etudiantHasVille->nom }}</p>

@@ -1,24 +1,17 @@
 @extends('layouts.app')
 @section('title', 'Liste Étudiants')
 @section('content')
-<nav class="navbar navbar-inverse bg-dark mb-4">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand text-white" href="{{ route('liste.index')}}">Étudiants de Maisonneuve</a>
-    </div>
-    <a href="{{ route('liste.create')}}" class="btn btn-primary">Ajouter un étudiant</a>
-  </div>
-</nav> 
+
+@include('partials.nav')
 
 <div class="container">
-  <h2>Liste des étudiants</h2>
-  <p>Voici une liste de 100 étudiants</p>            
+  <h2>@lang('lang.student_list')</h2>          
   <table class="table table-striped">
 
     <thead>
       <tr>
-        <th>Nom</th>
-        <th>Courriel</th>
+        <th>@lang('lang.name')</th>
+        <th>@lang('lang.email')</th>
         <th>Actions</th>
 
       </tr>
@@ -30,16 +23,16 @@
         <td>{{ $etudiant->nom }}</td>
         <td>{{ $etudiant->email }}</td>
         <td>
-          <a href="{{ route('liste.show', $etudiant->id)}}" class="btn btn-info">Plus d'infos...</a>
-          <a href="{{ route('liste.edit', $etudiant->id)}}" class="btn btn-warning">Mettre a jour</a>
-          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Supprimer</button>
+          <a href="{{ route('liste.show', $etudiant->id)}}" class="btn btn-info">@lang('lang.more_infos')</a>
+          <a href="{{ route('liste.edit', $etudiant->id)}}" class="btn btn-warning">@lang('lang.update')</a>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">@lang('lang.add_delete')</button>
         </td>
     </tr>
 
     @empty
 
     <tr>
-      <td class="text-danger">Aucun étudiants</td>
+      <td class="text-danger">@lang('lang.no_students')</td>
     </tr>
 
     @endforelse
