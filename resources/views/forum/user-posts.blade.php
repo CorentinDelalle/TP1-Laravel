@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title', 'Liste Étudiants')
 @section('content')
 
 @include('partials.nav')
@@ -7,7 +6,7 @@
     <div class="row">
         <div class="col-12 text-center pt-5">
             <h1 class="display-one">
-                @lang('lang.my_blog')
+                @lang('lang.article')
             </h1>
             <hr>
             <div class="row">

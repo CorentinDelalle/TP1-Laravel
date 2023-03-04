@@ -9,7 +9,7 @@ return [
     'student_list_tab_email' => 'Email',
     'more_infos' => 'More...',
     'update' => 'Update',
-    'delete' => 'Email',
+    'delete' => 'Delete',
     'name' => 'Name',
     'address' => 'Address',
     'email' => 'Email',
@@ -35,6 +35,7 @@ return [
     'dashboard' => 'Dashboard',
     'reading_title' => 'Posts',
     'add_post' => 'Add post',
+    'hello' => 'Hello',
 
 
 ];

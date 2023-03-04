@@ -12,7 +12,7 @@
     </div>
     @else
     <div>
-      <span class="text-white p-2">Bonjour {{ Auth::user()->getEtudiant->nom }}</span>
+      <span class="text-white p-2">@lang('lang.hello') {{ Auth::user()->getEtudiant->nom }}</span>
       <a href="{{ route('dashboard')}}" class="btn btn-primary">@lang('lang.dashboard')</a>
       <a href="{{ route('forum.index')}}" class="btn btn-primary">Forum</a>
       <a href="{{ route('logout')}}" class="btn btn-danger">@lang('lang.logout')</a>

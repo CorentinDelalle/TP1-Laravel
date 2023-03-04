@@ -32,6 +32,7 @@ return [
     'dashboard' => 'Tableau de bord',
     'reading_title' => 'Articles',
     'add_post' => 'Ajouter un article',
+    'hello' => 'Bonjour',
     
 
 ];

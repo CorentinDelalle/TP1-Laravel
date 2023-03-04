@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title', 'Liste Étudiants')
 @section('content')
 
 @include('partials.nav')

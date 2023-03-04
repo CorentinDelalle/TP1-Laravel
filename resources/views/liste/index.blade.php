@@ -25,7 +25,7 @@
         <td>
           <a href="{{ route('liste.show', $etudiant->id)}}" class="btn btn-info">@lang('lang.more_infos')</a>
           <a href="{{ route('liste.edit', $etudiant->id)}}" class="btn btn-warning">@lang('lang.update')</a>
-          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">@lang('lang.add_delete')</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">@lang('lang.delete')</button>
         </td>
     </tr>
 
